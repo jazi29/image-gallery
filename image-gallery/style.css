@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     box-sizing: border-box;
 }
 body{
     margin: 0 auto;
+    font-family: 'Inter', sans-serif;
 }
 .container{
     margin: 0 auto;
@@ -11,7 +13,7 @@ body{
     max-width: 1440px;
     height: 900px;
     border: 1px solid black;
-    background-color: rgb(252, 243, 225);
+    background-color: rgb(250, 244, 232);
 }
 header{
     display: flex;
@@ -24,7 +26,28 @@ header{
     height: 90px;
 }
 .text-logo{
-    font-size: 20px;
+    color: darkgreen;
+    font-weight: 900;
+    font-size: 24px;
+}
+#search{
+    margin-left: 40px;
+    padding-left: 10px;
+    width: 500px;
+    height: 30px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    background-color: rgb(250, 244, 232);
+}  
+#search::after {
+    content: "🔍";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+form div{
+    position: relative;
 }
 main{
     max-width: 1440px;
@@ -36,7 +59,7 @@ main{
     display: grid;
     justify-content: center;
     grid-row-gap: 10px;
-    grid-column-gap: 20px;
+    grid-column-gap: 40px;
     grid-template-columns: 370px 370px 370px;
     grid-template-rows: 220px 220px 220px;
 }
@@ -49,8 +72,8 @@ main{
 footer{
     max-width: 1440px;
     height: 90px;
-    border-top: 3px solid darkgreen;
-    background-color: rgb(10, 90, 10);
+    border-top: 5px solid rgb(10, 90, 10);
+    background-color: darkgreen;
 }
 a{
     text-decoration: none;
@@ -58,6 +81,7 @@ a{
 p{
     color: white;
     font-size: large;
+    font-weight: 700;
 }
 footer{
     display: flex;
@@ -65,4 +89,16 @@ footer{
     padding-left: 25px;
     padding-right: 25px;
     justify-content: space-between;
+}
+.text-logo:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
