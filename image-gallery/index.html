@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/50/013220/camera--v3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/50/FFFFFF/camera--v3.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">
-                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/013220/camera--v3.png" alt="camera--v3"/>
-            </div>
+            <a class="logo" href="index.html">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/camera--v3.png" alt="camera--v3"/>
+            </a>
             <div class="search">
-                <form action="">
+                <form action="" id="searchForm">
                     <div>
-                        <input type="search" placeholder="Search..." id="search">
+                        <input type="search" placeholder="Search..." id="search" autocomplete="off">
+                    </div>
+                    <div>
+                        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 24 24"
+                            style="fill:#054884;">
+                                <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
+                            </svg></button>
                     </div>
                 </form>
+                
             </div>
             <div class="text-logo">
                 Gallery
@@ -28,15 +35,33 @@
         </header>
         <main>
             <div class="img-container">
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
+                <div class="div">
+                    <img src="" alt="">
+                </div>
+                <div class="div">
+                    <img src="" alt="">
+                </div>
+                <div class="div">
+                    <img src="" alt="">
+                </div>
+                <div class="div">
+                    <img src="" alt="">
+                </div>
+                <div class="div">
+                    <img src="" alt="">
+                </div>
+                <div class="div">
+                    <img src="" alt="">
+                </div>
+                <div class="div">
+                    <img src="" alt="">
+                </div>
+                <div class="div">
+                    <img src="" alt="">
+                </div>
+                <div class="div">
+                    <img src="" alt="">
+                </div>
             </div>
         </main>
         <footer>
@@ -167,4 +192,5 @@ style="fill:#FFFFFF;">
         </footer>
     </div>
 </body>
+<script src="index.js"></script>
 </html>
