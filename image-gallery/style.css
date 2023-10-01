@@ -31,8 +31,13 @@ header{
     font-weight: 900;
     font-size: 24px;
 }
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+}
 #search{
-    position: relative;
     margin-left: 40px;
     padding-left: 10px;
     width: 100%;
@@ -41,15 +46,7 @@ header{
     border: 2px solid #5f5b5b;
     border-radius: 5px;
     background-color: rgb(250, 244, 232);
-}  
-button{
-    position: absolute;
-    top: 36px;
-    right: 453px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
+} 
 main{
     margin: 0 auto;
     max-width: 1440px;
@@ -121,8 +118,5 @@ a:hover{
     }
     .text-logo{
         font-size: smaller;
-    }
-    button{
-        display: none;
     }
 }
